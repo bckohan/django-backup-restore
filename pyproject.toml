@@ -1,0 +1,61 @@
+[tool.poetry]
+name = "django-backup-restore"
+version = "0.1.0"
+description = "A generic, pluggable backup and restore command framework for Django."
+authors = ["Brian Kohan <bckohan@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/bckohan/django-backup-restore"
+homepage = "https://django-typer.readthedocs.io"
+keywords = ["django", "CLI", "management", "backup", "restore", "commands"]
+packages = [
+    { include = "django" }
+]
+
+classifiers = [
+    "Environment :: Console",
+    "Framework :: Django",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: Django :: 3.2",
+    "Framework :: Django :: 4.0",
+    "Framework :: Django :: 4.1",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
+    "Framework :: Django :: 5.1",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: Site Management",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+
+[tool.poetry.urls]
+"Homepage" = "https://django-backup-restore.readthedocs.io"
+"Documentation" = "https://django-backup-restore.readthedocs.io"
+"Repository" = "https://github.com/bckohan/django-backup-restore"
+"Issues" = "https://github.com/bckohan/django-backup-restore/issues"
+"Changelog" = "https://django-backup-restore.readthedocs.io/en/latest/changelog.html"
+"Code_of_Conduct" = "https://github.com/django-commons/membership/blob/main/CODE_OF_CONDUCT.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+django = ">=4.2,<6.0"
+django-typer = ">=2.2,<3.0"
+
+rich = { version = ">=10.11.0,<14.0.0", optional = true }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
