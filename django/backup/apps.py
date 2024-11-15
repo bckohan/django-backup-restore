@@ -1,7 +1,7 @@
 from django.apps import AppConfig
 
+
 class DjangoBackupConfig(AppConfig):
-    
-    name = "backup"
-    label = name
+    name = "django.backup"
+    label = "django_backup"
     verbose_name = "Backup"

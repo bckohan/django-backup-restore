@@ -1,7 +1,7 @@
 from django.apps import AppConfig
 
+
 class DjangoRestoreConfig(AppConfig):
-    
-    name = "restore"
-    label = name
+    name = "django.restore"
+    label = "django_restore"
     verbose_name = "Restore"
