@@ -4,7 +4,7 @@ from django_typer.management import command
 
 from django.utils.translation import gettext_lazy as _
 
-from ._base import BaseBackupRestoreCommand
+from . import BaseBackupRestoreCommand
 
 
 class Command(BaseBackupRestoreCommand, chain=True):
